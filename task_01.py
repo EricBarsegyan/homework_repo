@@ -3,3 +3,16 @@
 
 def invert(lst):
     return list(map(lambda x: -x, lst));
+
+# Хорошо!
+# Если использовать пройденный материал, то можно так
+
+def invert(lst):
+    arr = []
+    for i in lst:
+        arr.append(-i)
+    return arr
+
+# Или короче (через списковые включения)
+def invert(lst):
+    return [-i for i in lst]
